@@ -17,7 +17,7 @@ app.get("/BSD", (req, res) => {
 });
 
 app.get("/highGPA", (req, res) => {
-    service.highGPA().then((data) => {res.send(data)}).catch((err) => {console.log(err)})
+    service.highGPA().then((data) => {res.send("<h2>Highest GPA</h2><br><a>Student ID: <a>" + data.studId + "<br><br><a>Name: </a>" + data.name + "<br><br><a>Program: </a>" + data.program + "<br><br><a>GPA: </a>" + data.gpa)}).catch((err) => {console.log(err)})
 });
 
 service.init().then(() => {app.listen(HTTP_PORT, onHttpStart)}).catch(() => {console.log("Error starting server")})
