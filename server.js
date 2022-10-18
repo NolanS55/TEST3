@@ -9,7 +9,7 @@ function onHttpStart() {
 }
 
 app.get("/", (req, res) => {
-    res.send("<div><h2>Declaration</h2><p>I declare that this test is my own work in accordance with Seneca Academic Policy. No part of this test has <br> been copied manually or electronically from any other source <br><br> Name: <span style='background-color: yellow'> Nolan Smith </span> <br><br> Student Number: <span style='background-color: yellow'> 101664217 </span> <br></p><a href=/BSD>Go to BSD</a><br><a href=/highGPA>Go to high GPA</a></div>");
+    res.send("<div><h2>Declaration</h2><p>I acknowledge the colleges acedemic intergrity policy- and my own integrity - remain in effect <br> whether my work is done femotely or on site <br> Any assignment is an acg of trust between<br> me and my instructor <br> and especially my classmates ewven when no one is watching <br> I declare I will not break that trust <br><br> Name: <span style='background-color: yellow'> Nolan Smith </span> <br><br> Student Number: <span style='background-color: yellow'> 101664217 </span> <br></p><a href=/BSD>Go to BSD</a><br><a href=/highGPA>Go to high GPA</a></div>");
 });
 
 app.get("/BSD", (req, res) => {
