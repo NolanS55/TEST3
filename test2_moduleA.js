@@ -15,10 +15,18 @@ module.exports. init = function () {
     })
 }
 
+
+
 module.exports. getBSD = function () {
     return new Promise((resolve, reject)=> {
         if(students.length === 0) reject("No students found")
-        resolve(students)
+        let BSDstud = [];
+        for(let i =0; i < students.length; i++) {
+            if(students[i].program == "BSD") {
+                BSDstud.push(students[i])
+            }
+        }
+        resolve(BSDstud)
     })
 }
 
@@ -32,6 +40,7 @@ module.exports. highGPA = function () {
                 hGpa = students[i]
             }
         }
+        console.log(hGpa)
         resolve(hGpa)
     })
 }
