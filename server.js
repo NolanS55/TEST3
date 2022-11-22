@@ -1,3 +1,4 @@
+//https://blue-duck-coat.cyclic.app
 var HTTP_PORT = process.env.PORT || 8080;
 var express = require("express");
 var app = express();
@@ -13,7 +14,7 @@ app.set('view engine', '.hbs');
 
 
 
-//https://drab-lime-harp-seal-cape.cyclic.app
+
 //update
 function onHttpStart() {
     console.log("Express http server listening on: " + HTTP_PORT);
